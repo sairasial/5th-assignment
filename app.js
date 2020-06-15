@@ -541,8 +541,25 @@ if (hour < 18) {
 else{
     console.log(greeting = "Good evening"); 
 }
+ //qno:7
+var time=prompt("Enter time in 24 hour clock format like 1900=7pm");
+if (time>=0000&&time<1200){
+  alert("GOOD MORNING.....!")
+}
+else if (time>=1200&&time<1700){
+  alert("GOOD AFTERNOON.....!")
+}
+else if (time>=1700&&time<2100){
+  alert("GOOD EVENING.....!")
+}
+else if (time>=2100&&time<2359){
+  alert("GOOD NIGHT.....!")
+}
+else{
+  alert("please enter appropriate time")
+}
 
-//12-13:7                                           //////////////////////////////////////////
+                                        //////////////////////////////////////////
 
 
 
@@ -601,9 +618,29 @@ for(i=0;i<3;i++){
     console.log("Score of "+ stu[i] +" is "+ m[i] +". Percentage: "+per)
 }                          ////////////////////////////////////////////
 
+
 //qno:9
-
-
+var colors=["orange","yellow","red"]
+var beg=prompt("what do u want to add beginning of the color array?")
+colors.unshift(beg)
+alert(colors)
+var beg=prompt("what do u want to add end of the color array?")
+colors.push(beg)
+alert(colors)
+colors.unshift("grey","purple")
+alert(colors)
+colors.shift()
+alert(colors)
+colors.pop()
+alert(colors)
+var beg=prompt("what do u want to add in the color array?")
+var num=+prompt("at which index u want to insert?")
+colors.splice(num,num,beg)
+alert(colors)
+var num1=+prompt("at which index u want to delete colours?")
+var num2=+prompt("how many colours u want to delete ?")
+colors.splice(num1,num2+1)
+alert(colors)
 
 
 
@@ -646,7 +683,13 @@ for(j=4;j>=0;j--){
 
 //qno:15
 
-
+ //qno:15
+var arr=["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+document.write("<select>")
+for(var i=0; i < arr.length ;i++){
+  document.write("<option>"+ arr[i] +"</option>")
+}
+document.write("</select>")
 
                                             //ASSIGNMENT NO:17 TO 20
 
